@@ -1,15 +1,17 @@
-# colab_setup.py
+# env_setup.py
 # Central setup script for "Why Is My LLM Slow?"
-# Save this file to Google Drive at:  MyDrive/llm-perf-book-labs/colab_setup.py
+# Cloned to Google Drive at:  MyDrive/llm-perf-book-labs/setup/env_setup.py
 #
-# Each chapter notebook runs it with two cells:
+# Each chapter notebook runs it with three cells:
 #
 #   Cell 1 — mount Drive (once per session):
 #     from google.colab import drive
 #     drive.mount('/content/drive')
 #
 #   Cell 2 — run this script:
-#     %run /content/drive/MyDrive/llm-perf-book-labs/colab_setup.py
+#     %run /content/drive/MyDrive/llm-perf-book-labs/setup/env_setup.py
+#
+#   Cell 3 — HF login (via Colab secret HF_TOKEN, falls back to manual prompt)
 #
 # That's it. All installs and verification are handled here.
 
